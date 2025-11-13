@@ -1,7 +1,6 @@
-import { Button, Card, Grid, Group, Image, Text } from '@mantine/core';
-import { IconShoppingCartPlus, IconShoppingCartX } from '@tabler/icons-react';
-import React from 'react'
-
+import { Button, Card, Grid, Group, Image, Text } from "@mantine/core";
+import { IconShoppingCartPlus, IconShoppingCartX } from "@tabler/icons-react";
+import React from "react";
 
 const Card_List = ({ data }) => {
   return (
@@ -13,14 +12,15 @@ const Card_List = ({ data }) => {
               <Card shadow="sm" padding="xs" radius="sm" withBorder>
                 <Card.Section>
                   <Image
-                    height={160}
+                    height={200}
                     fit="cover"
-                    src={item.image || "https://i.pinimg.com/736x/c7/a8/dd/c7a8ddb4755af10a89035040f6b3bdcd.jpg"}
+                    src={
+                      item.image ||
+                      "https://i.pinimg.com/736x/c7/a8/dd/c7a8ddb4755af10a89035040f6b3bdcd.jpg"
+                    }
                     alt="Norway"
                   />
                 </Card.Section>
-
-
 
                 <Text fw={500} size="sm" mt={"xs"} lineClamp={1}>
                   {item.name}
@@ -29,24 +29,22 @@ const Card_List = ({ data }) => {
                   {item.price} so'm
                 </Text>
 
-
-
-                <Group grow mt={"xs"} >
-                  <Button color='dark' size="compact-md" rightSection={<IconShoppingCartPlus size={20}/>}>
+                <Group grow mt={"xs"}>
+                  <Button
+                    color="dark"
+                    size="compact-md"
+                    rightSection={<IconShoppingCartPlus size={20} />}
+                  >
                     Savatga Qo'shish
                   </Button>
                 </Group>
-
-
-
               </Card>
             </Grid.Col>
           );
         })}
       </Grid>
     </>
-  )
-}
+  );
+};
 
-
-export default Card_List
+export default Card_List;

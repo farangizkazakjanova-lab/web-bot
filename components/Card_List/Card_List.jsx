@@ -12,7 +12,7 @@ const Card_List = ({ data }) => {
               <Card shadow="sm" padding="xs" radius="sm" withBorder>
                 <Card.Section>
                   <Image
-                    height={200}
+                    height={160}
                     fit="cover"
                     src={
                       item.image ||

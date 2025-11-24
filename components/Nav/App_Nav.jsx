@@ -9,7 +9,7 @@ const fetcher = (...args) => fetch(...args).then((res) => res.json());
 const App_Nav = () => {
   const { id } = useParams();
   const { data, error, isLoading } = useSWR(
-    "https://lesson-bot-node.onrender.com/api/categories",
+    "https://web-bot-node-4kx7.onrender.com/api/categories",
     fetcher
   );
 

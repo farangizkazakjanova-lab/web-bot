@@ -23,7 +23,7 @@ const page = () => {
     data: category,
     error,
     isLoading,
-  } = useSWR("https://lesson-bot-node.onrender.com/api/categories", fetcher);
+  } = useSWR("https://web-bot-node-4kx7.onrender.com/api/categories", fetcher);
 
   const catSelect = category?.map((item) => {
     return { value: item._id, label: item.name };
@@ -72,7 +72,7 @@ const page = () => {
   const CreateProduct = async (values) => {
     try {
       let res = await fetch(
-        "https://lesson-bot-node.onrender.com/api/products",
+        "https://web-bot-node-4kx7.onrender.com/api/products",
         {
           method: "POST",
           headers: {

@@ -21,7 +21,7 @@ function Dash_CardList({ data }) {
   const DeleteProduct = async () => {
     try {
       let res = await fetch(
-        `https://lesson-bot-node.onrender.com/api/products/${deleteItem._id}`,
+        `https://web-bot-node-4kx7.onrender.com/api/products/${deleteItem._id}`,
         {
           method: "DELETE",
           headers: {

@@ -8,7 +8,7 @@ const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
 const DashBoard_page = () => {
   const { data, error, isLoading } = useSWR(
-    `https://lesson-bot-node.onrender.com/api/products`,
+    `https://web-bot-node-4kx7.onrender.com/api/products`,
     fetcher
   );
 

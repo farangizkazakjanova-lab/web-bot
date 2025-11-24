@@ -11,9 +11,14 @@ const Dash_Nav = () => {
           {" "}
           <Button>Malumot Qoshish</Button>
         </Link>
+        <Link href={`/dashboard/catadd`}>
+          {" "}
+          <Button>Categoriya Qo'shish</Button>
+        </Link>
       </Flex>
     </>
   );
 };
 
 export default Dash_Nav;
+  
